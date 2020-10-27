@@ -1498,11 +1498,6 @@ header .owl-carousel .owl-nav .owl-prev:focus, header .owl-carousel .owl-nav .ow
     -webkit-box-shadow: 0 4px 12px 0 rgba(17, 51, 83, 0.02);
             box-shadow: 0 4px 12px 0 rgba(17, 51, 83, 0.02);
   }
-  header .navbar .menu {
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-  }
   header .navbar .menu .navbar-brand {
     width: 120px;
     margin-left: 0;

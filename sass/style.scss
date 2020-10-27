@@ -1,0 +1,166 @@
+@import 'variables';
+@import 'icons';
+@import 'reset';
+
+header {
+    width: 100%;
+    height: 100vh;
+
+    .navbar {
+
+        .navbar-brand {
+            z-index: 1234;
+            margin-left: 7rem;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: #1b2c40;
+                    font-size: .9rem;
+                    font-weight: 600;
+                    transition: color .5s ease-in-out;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+
+            .active {
+                .nav-link {
+                    color: #000;
+                }
+            }
+        }
+
+        marquee {
+            font-weight: 700;
+            color: #000;
+            letter-spacing: .1rem;
+            font-size: 1rem;
+        }
+
+        .nav {            
+            .nav-item {
+                .nav-link {
+                    color: #1b2c40;
+                    font-size: .9rem;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    transition: color .5s ease-in-out;
+
+                    i {
+                        font-size: 16px;
+                        margin-right: .25rem;
+                    }
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .owl-carousel {
+        position: relative;
+
+        .item {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+
+            color: white;
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.25);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .item-1 {
+            background: url(..//images/slider/1.jpg) no-repeat center center/cover;
+        }
+
+        .item-2 {
+            background: url(..//images/slider/2.jpg) no-repeat center center/cover;
+        }
+
+        .item-3 {
+            background: url(..//images/slider/3.jpg) no-repeat center center/cover;
+        }
+
+        .owl-dots  {
+            display: none;
+        }
+
+        .owl-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 60px;
+
+            .owl-prev, .owl-next {
+                color: rgba(255, 255, 255, 0.5);
+                font-weight: bold;
+                font-size: 2.75rem;
+                transition: color .5s ease-in-out;
+
+                &:hover {
+                    background: none;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.product-section {
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .card {
+        background: transparent;
+        position: relative;
+        overflow: hidden;
+        border: 0;
+
+        .card-img-top {
+            transition: transform .5s ease-in-out;
+        }
+
+        &:hover {
+            .card-img-top {
+                transform: scale(1.07);
+            }
+        }
+    }
+}
+
+.card {
+    margin-bottom: 1.75rem;
+}
+
+@media(max-width: 768px) {
+    .desktop-menu {
+        display: none !important;
+    }
+}

@@ -19,9 +19,12 @@ $('.owl-carousel').owlCarousel({
 });
 
 /** MOBILE MENU SHOW AND HIDE */
-let menuIcon = document.querySelector('.hamburger');
-let mobileMenu = document.querySelector('.mobile-menu');
-let closeIcon = document.querySelector('.close-icon');
+const menuIcon = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeIcon = document.querySelector('.close-icon');
+const searchBar = document.querySelector('.search-bar');
+const searchIcon = document.querySelector('.search-icon');
+const searchClose = document.querySelector('.search-close');
 
 // SHOW MENU
 menuIcon.addEventListener('click', () => {
@@ -33,6 +36,12 @@ closeIcon.addEventListener('click', () => {
     mobileMenu.classList.remove('show');
 });
 
-// window.addEventListener('click', e => {
-//     e.target == mobileMenu ? mobileMenu.classList.remove('show') : false;
-// });
+// SHOW SEARCH-BAR
+searchIcon.addEventListener('click', () => {
+    searchBar.classList.toggle('show');
+});
+
+// HIDE SEARCH-BAR
+searchClose.addEventListener('click', () => {
+    searchBar.classList.remove('show');
+});

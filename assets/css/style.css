@@ -1196,9 +1196,112 @@ button:focus {
   border-color: #1b2c40;
 }
 
+/** SEARCH-BAR */
+.search-bar {
+  position: fixed;
+  top: -50%;
+  left: 0;
+  z-index: 12345;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.search-bar form {
+  position: relative;
+}
+
+.search-bar form input {
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+}
+
+.search-bar form button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search-bar form .search-ico {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.search-bar form .search-ico i {
+  font-size: 18px;
+}
+
+.search-bar .form-group {
+  width: 100%;
+}
+
+.search-bar .search-close {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.search-bar .search-close i {
+  font-size: 22px;
+}
+
+.search-bar .search-close:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.search-bar .search-close:hover i {
+  color: #ff000d;
+}
+
+.search-bar.show {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+
+/** HEADER */
 header {
   width: 100%;
   height: 100vh;
+  position: relative;
+}
+
+header .search-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1234;
+}
+
+header .search-icon i {
+  font-size: 20px;
+  color: white;
+}
+
+header .navbar {
+  margin-top: 1rem;
 }
 
 header .navbar .navbar-brand {
@@ -1424,8 +1527,6 @@ header .owl-carousel .owl-nav .owl-prev:focus, header .owl-carousel .owl-nav .ow
     padding: .85rem;
   }
   header .navbar .menu .mobile-menu .mobile-header .close-icon {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
     -webkit-transition: -webkit-transform .5s ease-in-out;
     transition: -webkit-transform .5s ease-in-out;
     transition: transform .5s ease-in-out;

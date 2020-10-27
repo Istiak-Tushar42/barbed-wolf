@@ -1,3 +1,4 @@
+/** OWL-CAROUSEL FOR FULL SCREEN SLIDER */
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -15,4 +16,19 @@ $('.owl-carousel').owlCarousel({
             items:1
         }
     }
-})
+});
+
+/** MOBILE MENU SHOW AND HIDE */
+let menuIcon = document.querySelector('.hamburger');
+let mobileMenu = document.querySelector('.mobile-menu');
+let closeIcon = document.querySelector('.close-icon');
+
+// SHOW MENU
+menuIcon.addEventListener('click', () => {
+    mobileMenu.classList.add('show');
+});
+
+// HIDE MENU
+closeIcon.addEventListener('click', () => {
+    mobileMenu.classList.remove('show');
+});

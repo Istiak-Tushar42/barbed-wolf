@@ -30,3 +30,19 @@ a {
         color: black;
     }
 }
+
+button {
+    &:focus {
+        outline: none;
+        box-shadow: none !important;
+        border: none;
+    }
+}
+
+.form-control {
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: #1b2c40;
+    }
+}

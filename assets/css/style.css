@@ -1504,6 +1504,7 @@ header .owl-carousel .owl-nav .owl-prev:focus, header .owl-carousel .owl-nav .ow
     background: white;
     -webkit-box-shadow: 0 4px 12px 0 rgba(17, 51, 83, 0.02);
             box-shadow: 0 4px 12px 0 rgba(17, 51, 83, 0.02);
+    margin-top: 0;
   }
   header .navbar .menu {
     -webkit-box-align: center !important;

@@ -303,8 +303,11 @@ header {
                     height: 100vh;
                     width: 250px;
                     top: 0;
-                    left: 100%;
+                    left: -100%;
                     z-index: 1111;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .6s ease-in-out;
 
                     .mobile-header {
                         padding: .85rem;
@@ -344,6 +347,8 @@ header {
 
                 .mobile-menu.show {
                     left: 0;
+                    visibility: visible;
+                    opacity: 1;
                 }
             }
         }

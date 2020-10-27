@@ -1521,8 +1521,12 @@ header .owl-carousel .owl-nav .owl-prev:focus, header .owl-carousel .owl-nav .ow
     height: 100vh;
     width: 250px;
     top: 0;
-    left: 100%;
+    left: -100%;
     z-index: 1111;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
   }
   header .navbar .menu .mobile-menu .mobile-header {
     padding: .85rem;
@@ -1560,5 +1564,7 @@ header .owl-carousel .owl-nav .owl-prev:focus, header .owl-carousel .owl-nav .ow
   }
   header .navbar .menu .mobile-menu.show {
     left: 0;
+    visibility: visible;
+    opacity: 1;
   }
 }

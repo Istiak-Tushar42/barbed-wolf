@@ -26,14 +26,28 @@ const searchBar = document.querySelector('.search-bar');
 const searchIcon = document.querySelector('.search-icon');
 const searchClose = document.querySelector('.search-close');
 
-// SHOW MENU
+// SHOW MOBILE MENU
 menuIcon.addEventListener('click', () => {
-    mobileMenu.classList.add('show');
+    mobileMenu.classList.toggle('show');
 });
 
-// HIDE MENU
+// HIDE MOBILE MENU
 closeIcon.addEventListener('click', () => {
     mobileMenu.classList.remove('show');
+});
+
+document.addEventListener('click', () => {
+    mobileMenu.classList.remove('show');
+});
+
+menuIcon.addEventListener('click', (e) => {
+    e.stopPropagation();
+    return false; 
+});
+
+mobileMenu.addEventListener('click', (e) => {
+    e.stopPropagation();
+    return false; 
 });
 
 // SHOW SEARCH-BAR

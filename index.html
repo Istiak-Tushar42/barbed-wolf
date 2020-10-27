@@ -40,32 +40,33 @@
     </div>
 
     <header>
-        <nav class="navbar fixed-top p-0">
-            <div class="container p-0 d-flex align-items-start justify-content-between menu">
+        <nav class="navbar fixed-top p-0 bg-white">
+            <div class="container d-flex py-3 align-items-center justify-content-between menu  px-0">
+                <!-- BRAND LOGO -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.svg" class="img-fluid" alt="">
+                </a>
+                
                 <!-- DESKTOP MENU -->
-                <ul class="navbar-nav d-none d-lg-block">
+                <ul class="navbar-nav d-none d-lg-flex flex-row">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">MUJER</a>
+                        <a class="nav-link" href="index.html">WOMEN</a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link" href="product.html">HOMBRE</a>
+                        <a class="nav-link" href="product.html">MEN</a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link" href="collections.html">COLECCIONES</a>
+                        <a class="nav-link" href="collections.html">COLLECTIONS</a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link" href="lookbook.html">LOOKBOOK</a>
+                        <a class="nav-link" href="lookbook.html">ABOUT US</a>
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link" href="sale.html">SALE</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="single.html">FULL MENU</a>
+                        <a class="nav-link" href="sale.html">CONTACT US</a>
                     </li>
                 </ul>
 
@@ -76,26 +77,11 @@
                     </button>
                 </div>
                 
-                <!-- BRAND LOGO -->
-                <div class="mx-auto">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo.svg" class="img-fluid" alt="">
-                    </a>
-
-                    <!-- <div class="row">
-                        <marquee direction="rtl">Ready to wear</marquee>
-                    </div> -->
-                </div>
-    
-                <!-- CART AND WISHLIST MENU -->
-                <ul class="nav flex-column flex-lg-row">    
-                    <li class="nav-item">
-                        <a class="nav-link" href="cart.html">
-                            <i class="icon-shopping-cart"></i>
-                            <span>MI CESTA</span>
-                        </a>
-                    </li>
-                </ul>
+                <!-- CART -->
+                <a class="nav-link cart" href="cart.html">
+                    <i class="icon-shopping-cart"></i>
+                    <span class="cart-counter">0</span>
+                </a>
 
                 <!-- MOBILE MENU -->
                 <div class="mobile-menu d-lg-none">
@@ -177,7 +163,7 @@
     <section class="mt-5 product-section">
         <div class="container">
 
-            <h2 class="mb-5 mt-2 text-center">Featured Products</h2>
+            <h2 class="mb-5 mt-2 text-center text-uppercase">Featured Products</h2>
 
             <div class="row">
                 <div class="col-6 col-md-4 col-lg-3">

@@ -1519,7 +1519,7 @@ header .owl-carousel .owl-nav .owl-prev:focus, header .owl-carousel .owl-nav .ow
     background: #f4f7f1;
     position: fixed;
     height: 100vh;
-    width: 220px;
+    width: 250px;
     top: 0;
     left: 100%;
     z-index: 1111;

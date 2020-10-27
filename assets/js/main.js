@@ -33,6 +33,6 @@ closeIcon.addEventListener('click', () => {
     mobileMenu.classList.remove('show');
 });
 
-window.addEventListener('click', e => {
-    e.target == mobileMenu ? mobileMenu.classList.remove('show') : false;
-});
+// window.addEventListener('click', e => {
+//     e.target == mobileMenu ? mobileMenu.classList.remove('show') : false;
+// });

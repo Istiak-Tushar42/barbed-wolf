@@ -1396,7 +1396,7 @@ header .owl-carousel .owl-nav .owl-prev:focus, header .owl-carousel .owl-nav .ow
   margin-bottom: 1.75rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   header .navbar {
     background: white;
     -webkit-box-shadow: 0 4px 12px 0 rgba(17, 51, 83, 0.02);
